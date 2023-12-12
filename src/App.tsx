@@ -6,8 +6,6 @@ import Transacoes from "./views/Transacoes/Transacoes";
 import Suporte from "./views/Suporte/Suporte";
 import NovoCartao from "./views/Carteira/NovoCartao";
 import Inscrever from "./views/Inscrever/Inscrever.jsx";
-import CardCredit from "./views/Carteira/CardCredit/CardCredit.jsx";
-import CardCredit2 from "./views/Carteira/CardCredit/CardCredit2.jsx";
 
 export default function App() {
     return (
@@ -16,11 +14,11 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/carteira" element={<Carteira />} />
-                    <Route path="/novoCartao" element={<CardCredit />} />
+                    <Route path="/novoCartao" element={<NovoCartao />} />
                     <Route path="/transacoes" element={<Transacoes />} />
                     <Route path="/arkadplus" element={<ArkadPlus />} />
                     <Route path="/suporte" element={<Suporte />} />
-                    <Route path="/inscrever" element={<Inscrever />} />
+                    <Route path="/inscrever" element={<Inscrever />}  />
                 </Routes>
             </div>
         </BrowserRouter>
